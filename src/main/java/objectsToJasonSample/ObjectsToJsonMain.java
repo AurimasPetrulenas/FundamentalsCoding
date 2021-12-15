@@ -18,6 +18,7 @@ public class ObjectsToJsonMain {
         //Json objektas yra kaip mapas, i ji dedam RAKTA ir REIKSME
         dogJson.put("sunsVardas", dog.getName());
         dogJson.put("sunsVeisle", dog.getBreed());
+        System.out.println(dogJson);
 
         FileWriter file = new FileWriter("src/main/resources/dog.json");
         file.write(dogJson.toString());

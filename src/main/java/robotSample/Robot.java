@@ -1,7 +1,5 @@
 package robotSample;
 
-import robotSample.Addon;
-
 import java.util.Arrays;
 
 public class Robot {
