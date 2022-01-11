@@ -20,4 +20,12 @@ public class Worker {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void superviserWorks() {
+        System.out.println("2. Superviser Works");
+    }
+
+    public void doNotMakeMoneyFromPrograming() {
+        System.out.println("3. Do not make EUR from programing");
+    }
 }

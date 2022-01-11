@@ -20,6 +20,13 @@ public class WorkersMain {
         bill.makeMoney();
 
         System.out.println("______________________");
+        Worker aurimas = new Worker("Aurimas");
+        System.out.println("Worker Aurimas:");
+        aurimas.goingToWork();
+        aurimas.superviserWorks();
+        aurimas.doNotMakeMoneyFromPrograming();
+
+        System.out.println("______________________");
 
         Driver bob = new Driver("Bob");
         System.out.println("Driver Bob:");
@@ -37,6 +44,7 @@ public class WorkersMain {
         workers.add(tomas);
         workers.add(bill);
         workers.add(bob);
+        workers.add(aurimas);
 
         System.out.println();
         System.out.println();
@@ -44,8 +52,8 @@ public class WorkersMain {
         for (Worker worker : workers) {
             worker.goingToWork();
             worker.makeMoney();
-            if (worker instanceof Driver) {
-                ((Driver) worker).drivingTaxi();
+            if (worker instanceof Doctor) {
+                ((Doctor) worker).treatsPeople();
             }
         }
     }
